@@ -1,1 +1,8 @@
-<p>student works!</p>
+<input type="text" [(ngModel)]="name" >
+<h3>
+   name: {{name}}
+</h3>
+<img #t1 [src]="imgUrl" [alt]="name">
+<input type="button" value="add" (click)="myFunc()" >
+
+
