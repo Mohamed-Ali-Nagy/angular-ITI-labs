@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 
 import { CoreModule } from './Core/core.module';
 import { StudentModule } from './student/student.module';
+import { DepartmentModule } from './department/department.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    StudentModule
+    StudentModule,
+    DepartmentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
