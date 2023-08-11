@@ -25,5 +25,19 @@ export class StudentListComponent {
 
    }
 
+   AddStudent(std:Student){
+    this.Students.push(std);
+   }
+   Delete(id:number){
+    if(confirm("Are you sure?")==true){
+      for(let i=0 ;i<this.Students.length;i++)
+      {
+          if(id==this.Students[i].id){
+            this.Students.splice(i,1);
+          }
+      }
+    }
+
+   }
 
 }

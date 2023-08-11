@@ -1,9 +1,8 @@
 <div class="row">
     <div class="col-md-12">
-        ID<input type="text" class="col-md-3 ">
-        Name<input type="text" class="col-md-3">
-        Age<input type="text" class="col-md-3">
-        <input type="button" value="add">
+        ID<input [(ngModel)]="newStudent.id" type="text" class="col-md-3 ">
+        Name<input [(ngModel)]="newStudent.name" type="text" class="col-md-3">
+        Age<input [(ngModel)]="newStudent.age" type="text" class="col-md-3">
+        <input type="button" value="add" (click)="Save()">
     </div>
-
 </div>
