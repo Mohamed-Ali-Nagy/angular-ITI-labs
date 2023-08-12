@@ -18,6 +18,15 @@ export class AllDepartmentsComponent implements OnInit{
   showDetails(id:number){
     this.detailsId=id;
   }
+  deleteDepartment(id:number){
+    if(confirm("Are you sure?")){
+      for(let i=0 ;i<this.departments.length;i++){
+        if(id==this.departments[i].id){
+          this.departments.splice(i,1);
+        }
+      }
+    }
+  }
 
 
 

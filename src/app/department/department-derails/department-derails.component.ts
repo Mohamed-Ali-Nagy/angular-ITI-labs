@@ -14,6 +14,4 @@ export class DepartmentDerailsComponent implements OnChanges{
   ngOnChanges(): void {
     this.department=this.deptService.getDepartmentById(this.deptId);
   }
-
-
 }
