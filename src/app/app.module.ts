@@ -9,6 +9,7 @@ import { StudentModule } from './student/student.module';
 import { DepartmentModule } from './department/department.module';
 import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     AppRoutingModule,
     CoreModule,
     StudentModule,
-    DepartmentModule
+    DepartmentModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,9 +4,9 @@ import { AddDepartmentComponent } from './add-department/add-department.componen
 import { DepartmentDerailsComponent } from './department-derails/department-derails.component';
 import { AllDepartmentsComponent } from './all-departments/all-departments.component';
 const routes:Routes=[
-    {path:'departmentsList',component:AllDepartmentsComponent},
+    {path:'',component:AllDepartmentsComponent},
     {path:'creaDepartment',component:AddDepartmentComponent},
-    {path:'departmentDetails',component:DepartmentDerailsComponent}
+    {path:'departmentDetails/:id',component:DepartmentDerailsComponent}
 ];
 @NgModule({
     imports: [RouterModule.forChild(routes)],

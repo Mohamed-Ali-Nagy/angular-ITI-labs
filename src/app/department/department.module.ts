@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AllDepartmentsComponent } from './all-departments/all-departments.component';
 import { DepartmentDerailsComponent } from './department-derails/department-derails.component';
 import { AddDepartmentComponent } from './add-department/add-department.component';
-import { AppRoutingModule } from '../app-routing.module';
+import { DepartmentRouting } from './departmentRouting';
 
 
 
@@ -15,7 +15,7 @@ import { AppRoutingModule } from '../app-routing.module';
     AddDepartmentComponent
   ],
   imports: [
-    CommonModule,FormsModule,AppRoutingModule
+    CommonModule,FormsModule,DepartmentRouting
   ],
   exports:[
     AllDepartmentsComponent,

@@ -16,13 +16,12 @@
                 <td>{{item.name}}</td>
                 <td>{{item.capacity}}</td>
                 <td>
-                  <button class="btn btn-outline-primary" (click)="showDetails(item.id)">Details</button>
+                  <button class="btn btn-outline-primary" [routerLink]="['departmentDetails',item.id]">Details</button>
                   <button class="btn btn-danger" (click)=" deleteDepartment(item.id)">Delete</button>
                 </td>
               </tr>
             </tbody>
           </table>
     </div>
-
 </div>
 
